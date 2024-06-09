@@ -8,10 +8,10 @@
         placeholder="Search..."
         @input="searchh()"
       />
-      <div v-if="data.length === 0">No results found.</div>
+      <div v-if="data.length === 0">No results found...</div>
     </div>
     <div :key="compKey">
-      <div class="card" v-for="item in data" v-bind:key="item.id">
+      <div class="cardd" v-for="item in data" v-bind:key="item.id">
         <CardComponent :userData="item" />
       </div>
     </div>
@@ -77,7 +77,7 @@ export default {
     margin-bottom:2rem;
     justify-content:center;
 }
-.card {
+.cardd {
   display: inline-block;
   margin-right: 10px;
 }

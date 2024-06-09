@@ -1,11 +1,13 @@
 <template>
-  <div>
+<div style="display:grid;justify-content:center;">
+  <div style="display:grid;justify-content:center;" >
     <h1> Counter: {{ counter }}</h1>
     <button class="increment-button" @click="incrementCounter">Parent Increment</button>
   </div>
   <div style="display:flex !important;" >
   <ChildOne :title="title1" @increment="incrementCounter"/>
   <ChildTwo :title="title2" @increment="incrementCounter"/>
+  </div>
   </div>
 </template>
 

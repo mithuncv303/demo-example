@@ -1,8 +1,12 @@
 <template>
   <div class="buttons">
+  <div style="display:grid;justify-content:center;">
+  <div>
     <button class="button button1" @click="redirect('one')">Question 1</button>
     <button class="button button2" @click="redirect('two')">Question 2</button>
     <button class="button button3" @click="redirect('three')">Question 3</button>
+    </div>
+    </div>
     <QuesOne v-if="quesOne" />
     <QuesTwo v-if="quesTwo" />
     <QuesThree v-if="quesThree" />

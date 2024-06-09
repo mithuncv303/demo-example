@@ -23,11 +23,13 @@ export default {
 <style scoped>
 .card {
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   margin: 10px;
   width: 260px;
   height:400px;
+  background-color:#fafafa;
+  border-color:#fafafa;
 }
 .card p{
   text-align:left;
